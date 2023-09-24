@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat 4</title>
+</head>
+<body>
+    <p id="bekezdes">Ide fog megjelenni a beírt szöveg: </p>
+    <input id="beviteliMezo" type="text" placeholder="Írj valamit ide">
+
+    <script>
+        const bekezdes = document.getElementById("bekezdes");
+        const beviteliMezo = document.getElementById("beviteliMezo");
+
+        beviteliMezo.addEventListener("input", () => {
+            bekezdes.textContent = "Ide fog megjelenni a beírt szöveg: " + beviteliMezo.value;
+        });
+    </script>
+</body>
+</html>
+
+<!--
+    4.Feladat Hozz létre egy oldalt egy bekezdéssel és egy beviteli mezővel. Ha a beviteli mezőbe 
+begépelünk valamit akkor a bekezdésben is jelenjen meg az a szöveg. (A beviteli mezőben lévő 
+értéket annak 'value' tulajdonságával tudja lekérdezni.)
+-->

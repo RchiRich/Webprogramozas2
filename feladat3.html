@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat 3</title>
+</head>
+<body>
+    <p id="bekezdes">Ez egy példa bekezdés.</p>
+    <img id="kep" src="kep.jpg" alt="Kattints a képre">
+    
+    <script>
+        const bekezdes = document.getElementById("bekezdes");
+        const kep = document.getElementById("kep");
+
+        kep.addEventListener("load", () => {
+            bekezdes.textContent = "Betöltődött";
+        });
+
+        kep.addEventListener("click", () => {
+            bekezdes.textContent = "Rákattintott";
+        });
+    </script>
+</body>
+</html>
+
+<!--
+3.Feladat Hozz létre egy oldalt egy bekezdéssel és alatta egy képpel. 
+a.) Ha a kép betöltődött akkor a bekezdésben jelenjen meg a "Betöltődött" felirat. 
+b.) A képre kattintva a bekezdés felirata "Rákattintott" legyen
+
+-->

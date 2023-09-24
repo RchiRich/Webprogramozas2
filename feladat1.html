@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat 1</title>
+</head>
+<body>
+
+<button id="GOMB">Húzd ide az egeret</button>
+
+<script>
+    var gomb = document.getElementById("GOMB");
+
+    gomb.addEventListener("mouseenter", function() {
+        gomb.textContent = "Sikerült";
+    });
+     
+</script>
+    
+</body>
+</html>
+
+<!--
+    1.Feladat Hozz létre egy gombot, melynek felirata "Húzd ide az egeret" legyen. Ha a gombra 
+ráhúzzuk az egeret akkor a gomb felirata "Sikerült" legyen.
+-->
